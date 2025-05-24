@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('price_us')->default(0);
             $table->integer('qty')->default(0);
             $table->string('sku')->nullable();
-            $table->json('attributes')->nullable();
+            $table->text('attributes')->nullable();
             $table->timestamps();
         });
     }

@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class SolarProductVariation extends Model
 {
     use HasFactory;
+
+    protected $casts = [
+    'attributes' => 'array', 
+];
 }
